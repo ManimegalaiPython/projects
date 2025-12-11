@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+ <!-- HEADER -->
+    <header>
+        <div class="nav-left">
+            <img src="images/logo_bld-removebg-preview.png" alt="logo">
+            <nav>
+                <a href="index.html" >Home</a>
+            <a href="about.html">About Us</a>
+            <a href="lookingforblood.html">Looking For Blood</a>
+            <a href="organ donation.html">Organ Donation</a>
+            <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+            </div>
+ <div class="user-icon" onclick="window.location.href='login.html'" class="active">
+            <i class="fa-solid fa-user"></i>
+        </div>        </div>
+    </header>
+
+    <!-- MAIN LOGIN AREA -->
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Password</label>
+            <input type="password">
+
+            <a href="#" class="forgot">Forgot Your Password?</a>
+
+            <button class="btn btn-login">Login</button>
+
+            <p style="margin-top: 20px; text-align:center;">
+                If you do not have a login please create a donor profile using the button below.
+            </p>
+
+            <button class="btn btn-donor" onclick="window.location.href='Donorprofile.html'">Create A Donor Profile</button>
+        </div>
+
+        <img src="images/heart_img-removebg-preview.png" class="side-img">
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Looking for Blood</a>
+                <a href="#">Blood Availability</a>
+                <a href="#">Blood Bank Directory</a>
+            </div>
+
+            <div>
+                <h3>Services</h3>
+                <a href="#">Want to Donate Blood</a>
+                <a href="#">Blood Donation Camps</a>
+                <a href="#">Donor Login</a>
+                <a href="#">About Blood Donation</a>
+                <a href="#">Register VBD Camp</a>
+            </div>
+
+            <div>
+                <h3>Other Links</h3>
+                <a href="#">Blood Bank Login</a>
+                <a href="#">Add your Blood Bank</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+
+                <div class="footer-contact-item">
+                    <span class="material-icons">location_on</span>
+                    8-2-686/DR/9, Banjara Hills, Hyderabad,<br> Telangana 500034
+                </div>
+
+                <div class="footer-contact-item">
+                    <span class="material-icons">call</span>
+                    +91-869-011-0011
+                </div>
+
+                <div class="footer-contact-item">
+                    <span class="material-icons">mail</span>
+                    bookingmyna@gmail.com
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="footer-bottom">
+            <p>© 2008-2025 Makeover booking service. All Rights Reserved</p>
+
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-times"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- TOGGLE MENU SCRIPT -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobileMenu").classList.toggle("show-menu");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Donation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Google Roboto Font & Custom CSS -->
+    <link rel="stylesheet" href="CSS/lookingforblood.css">
+</head>
+<body>
+
+<!-- ================== HEADER ================== -->
+<header>
+    <div class="nav-left">
+        <img src="images/logo_bld-removebg-preview.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="lookingforblood.html" class="active">Looking For Blood</a>
+            <a href="organ donation.html">Organ Donation</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </div>
+
+    <div class="nav-right">
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="user-icon" onclick="window.location.href='login.html'">
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+</header>
+
+<!-- ================== HERO SECTION ================== -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>ALL<br>ABOUT<br>BLOOD</h1>
+
+        <!-- BUTTON TO OPEN POPUP -->
+        <a href="#popup" class="eligibility-btn">Am I Eligible?</a>
+
+        <!-- POPUP (CSS Target Based) -->
+        <div id="popup" class="popup-overlay">
+            <a href="#" class="close-popup"></a>
+            <div class="popup-box">
+                <h2>How Old Are You?</h2>
+                <div class="age-options">
+                    <button>Under 16</button>
+                    <button>16-24 Years</button>
+                    <button class="active">24-70 Years</button>
+                    <button>Over 71 Years</button>
+                </div>
+                <p style="font-size: 16px; line-height: 1.6;">
+                    To Donate Plasma You Must Weigh 50 Kg Or More And Be 150 Cm Or Taller.
+                    <br>
+                    To Check If You Can Donate Blood Click The Button Below.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================== TEXT SECTION ================== -->
+<div class="text-section">
+    <h2>
+        The Need For Blood Is Constant, And Because There's No Substitute For Blood, New Zealand Relies On The
+        Generosity Of Everyday Heroes Like You To Make Sure There's Enough Available For Those Who Need It.
+    </h2>
+</div>
+
+<!-- ================== IMAGE + CARDS SECTION ================== -->
+<div class="blood-section">
+    <!-- LEFT SIDE IMAGE -->
+    <div class="blood-left">
+        <img src="images/240_F_282277676_2niQsgyrtiRBzfysFtp8JolVTtLUDS06.jpg" alt="Blood Donation">
+    </div>
+
+    <!-- RIGHT SIDE 4 CARDS -->
+    <div class="blood-right">
+        <div class="blood-card">
+            <h3>Red Blood Cells</h3>
+            <p>Red Blood Cells Carry Oxygen Through The Body.</p>
+            <p>Red Blood Cells Must Be Transfused Within 35 Days.</p>
+        </div>
+
+        <div class="blood-card">
+            <h3>White Blood Cells</h3>
+            <p>White Blood Cells Help Defend The Body From Disease And Foreign Matter.</p>
+            <p>White Blood Cells Last 24 Hours.</p>
+        </div>
+
+        <div class="blood-card">
+            <h3>Platelets</h3>
+            <p>Platelets Have Unique Blood Clotting Properties.</p>
+            <p>Platelets Must Be Transfused Within 7 Days.</p>
+        </div>
+
+        <div class="blood-card">
+            <h3>Plasma</h3>
+            <p>Plasma Makes Up Over Half The Volume Of Blood And Is Packed Full Of Proteins And Antibodies.</p>
+            <p>Plasma Can Be Frozen Up To 2 Years Or Made Into 11 Lifesaving Products.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================== BLOOD COMPATIBILITY SECTION ================== -->
+<section class="blood-wrapper">
+    <div class="donation-chart-area">
+        <img src="images/Giver-Receiver-Chart__ScaleMaxWidthWzcwMF0-removebg-preview.png" alt="Blood Donation Chart">
+    </div>
+
+    <div class="blood-info-box">
+        <h2 class="blood-info-title">Why Your Blood Group Is Important</h2>
+        <p>Did You Know We Have Two Main Blood Group Systems Which Help Decide Who Gets Your Blood? The ABO System And The Rh(D) Type.</p>
+        <p>The Combination Of These Two Systems Give Us The Eight Commonly-Known Blood Types: A+, A-, B+, B-, O+, O-, AB+, AB-.</p>
+        <p>Knowing The Right Blood Type To Give A Patient Can Prevent Complications Following A Blood Transfusion For Doctors And Surgeons.</p>
+        <p>Do You Know What Blood Type You Are? Check Out The Givers/Receivers Chart To See Who You're Compatible With.</p>
+    </div>
+</section>
+
+<!-- ================== TYPE SECTION ================== -->
+<div class="type-wrapper">
+    <h2>What's my type?</h2>
+    <p>Your blood type is inherited from your biological parents, similar to how your hair and eye colour are determined. It all comes down to genetics!</p>
+    <strong>ABO Blood Group System</strong>
+    <p>A and B genes, within the ABO system, are co-dominant, meaning that they will be expressed wherever the gene is present. However, the O gene will only be expressed in the absence of an A or B gene.</p>
+    <strong>Rh(D) Blood Group System</strong>
+    <p>The Rh(D) gene is also dominant and will be expressed if inherited from either parent. If you do not carry the Rh(D) gene you will be Rh(D) negative.</p>
+</div>
+
+<!-- ================== FOOTER ================== -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Looking for Blood</a>
+            <a href="#">Blood Availability</a>
+            <a href="#">Blood Bank Directory</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Want to Donate Blood</a>
+            <a href="#">Blood Donation Camps</a>
+            <a href="#">Donor Login</a>
+            <a href="#">About Blood Donation</a>
+            <a href="#">Register VBD Camp</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Other Links</h3>
+            <a href="#">Blood Bank Login</a>
+            <a href="#">Add your Blood Bank</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Info</h3>
+            <div class="footer-contact-item">
+                <span class="material-icons">location_on</span>
+                8-2-686/DR/9, Banjara Hills, Hyderabad,<br> Telangana 500034
+            </div>
+            <div class="footer-contact-item">
+                <span class="material-icons">call</span>
+                +91-869-011-0011
+            </div>
+            <div class="footer-contact-item">
+                <span class="material-icons">mail</span>
+                bookingorgans@gmail.com
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-bottom">
+        <p>© 2008–2025 Organs booking service. All Rights Reserved</p>
+        <div class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
